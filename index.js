@@ -23,9 +23,9 @@ app.use(helmet());
 app.use(morgan("common"));
 
 // Routes
-app.use("/api/auth", authRouter);
-app.use("/api/users", userRoute);
-app.use("/api/posts", postRoute);
+app.use("/auth", authRouter);
+app.use("/users", userRoute);
+app.use("/posts", postRoute);
 
 app.get("/", (req, res) => {
   res.send("Welcome to HomePage");
